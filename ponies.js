@@ -56,8 +56,8 @@ function init () {
 
   // STATS
 
-  stats = new Stats()
-  container.appendChild(stats.dom)
+  //stats = new Stats()
+  //container.appendChild(stats.dom)
 
   //
   window.addEventListener('resize', onWindowResize, false)
