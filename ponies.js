@@ -25,13 +25,17 @@ function init () {
   camera.position.set(70, 50, 2000)
 
   scene = new THREE.Scene()
-  scene.fog = new THREE.Fog(0x594b, 1000, FAR)
+  scene.fog = new THREE.Fog(0xcd32cd, 1000, FAR)
+  // scene.fog = new THREE.Fog(0x32cdcd, 1000, FAR)
+  // scene.fog = new THREE.Fog(0x594b, 1000, FAR)
 
   // LIGHTS
   var ambient = new THREE.AmbientLight(0x444644)
   scene.add(ambient)
 
-  light = new THREE.SpotLight(0xfffbbb, 1, 0, Math.PI / 2)
+  light = new THREE.SpotLight(0x5932cd, 1, 0, Math.PI / 2)
+  // light = new THREE.SpotLight(0x9932cc, 1, 0, Math.PI / 2)
+  // light = new THREE.SpotLight(0xfffbbb, 1, 0, Math.PI / 2)
   light.position.set(0, 2000, 1000)
   light.target.position.set(0, 0, 0)
   light.castShadow = true
